@@ -61,6 +61,8 @@
     self = [super initWithCoder:coder];
     if ( self )
     {
+        [self layoutIfNeeded];
+        
         _style = LRTextFieldStyleNone;
         _floatingLabelHeight = self.frame.size.height / 2;
         [self updateUI];
